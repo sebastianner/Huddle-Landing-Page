@@ -39,6 +39,10 @@ header{
     margin-right: 50px;
 }
 
+.main-image-container figure img{
+    transition: .6s;
+}
+
 .main-text-container{
     text-align: left;
     margin-bottom: 70px;
