@@ -12,22 +12,35 @@
 }
 
 body{
-    background-image: url('../images/bg-desktop.svg');
+    /* background-image: url('../images/bg-desktop.svg');
     background-color: var(--background-color);
     background-size: contain;
     background-position: center;
     min-height: 100vh;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 header{
     padding: 40px 40px 0px 40px;
+    position: absolute;
+    z-index: 1;
 }
 
 .main{
+    position: relative;
+    background-image: url('../images/bg-desktop.svg');
+    background-color: var(--background-color);
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main-content-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: inherit;
     padding: 40px 40px 0 40px;
 }
 
@@ -36,9 +49,8 @@ header{
 }
 
 .main-text-container{
-    align-self: flex-start;
     text-align: left;
-    margin-top: 25px;
+    margin-bottom: 70px;
 }
 
 .main-text-container h1{
@@ -81,8 +93,10 @@ header{
 }
 
 footer{
+    position: absolute;
     height: fit-content;
-    padding: 20px 50px 0px 0;
+    margin-top: -70px;
+    right: 35px;
 }
 
 .footer-list{
@@ -93,7 +107,10 @@ footer{
 }
 
 .footer-list-icons{
-
+    margin-right: 10px;
+}
+.footer-list-icons:nth-child(3){
+    margin-right: 0;
 }
 
 .footer-list-icons a{
@@ -102,5 +119,5 @@ footer{
 }
 
 .footer-list-icons a span{
-    font-size: 15px;
+    font-size: 20px;
 }
