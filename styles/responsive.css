@@ -34,11 +34,11 @@
     }
 
     .main-text-container h1{
-        font-size: 22px;
+        font-size: 25px;
         width: 100%;
     }
     .main-text-container p{
-        font-size: 13px;
+        font-size: 15px;
         width: 100%;
     }
 }
@@ -82,6 +82,10 @@
         left: 50%;
         right: 50%;
         margin-left: 50px;
+    }
+
+    .main-text-container a button{
+        margin-top: 40px;
     }
 }
 
